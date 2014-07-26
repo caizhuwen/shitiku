@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+
+	margin:auto;
+                            /*网页*/
+}
+
+.dialog{                         /*整个表格块*/
+	width:500px;
+	margin:80px auto;
+	border:7px solid #FFF;
+	box-shadow: 10px 10px 5px #888888;   /*添加方框阴影*/
+
+}
+
+.dialong_head{                      /*表头中间*/  
+	background:url(../images/bgmid.jpg) repeat;
+	width:500px;
+	height:60px;
+}
+
+.dialog_head_left{              /*表头左边*/
+	background:url(../images/bgLeft.jpg) no-repeat;
+	width:80px;
+	height:60px;
+	float:left;
+
+}
+
+.dialog_head_middle{                /*表头中间文字部分*/	
+	height:40px;
+	float:left;
+	text-align:center;
+	padding-top:0px;
+   
+	
+}
+
+.dialog_head_right{              /*表头右边*/
+	/*background:url(images/bgRight.jpg) no-repeat;*/
+	width:46px;
+	height:60px;
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+.dialog_body{
+	background-image:url(../images/dl.jpg);          /*表格内容块*/
+	height:300px;
+	
+}
+
+.dialog_body li{
+	list-style:none;
+	margin:21px;
+}
+
+.dialog_body form{
+	padding:20px;
+}
+
+.clear{
+	clear:both;
+}
+
+.reg_prompt{            /*文字区*/
+	display:inline-block;
+	width:90px;
+	text-align:right;
+}
+
+.reg_value{             /*编写区*/
+	text-align:left;
+}
+
+.submit{
+	margin:0 50px 0 110px;
+}
+.zhuce{     /*注册文字*/
+	text-align:center;
+}
+

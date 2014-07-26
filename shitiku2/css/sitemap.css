@@ -1,0 +1,127 @@
+body 	{font-size: 83%; line-height: 130%;
+ font-family: Geneva, Arial, Helvetica, Sans-Serif; 
+ margin: 0; padding: 3px;
+ }
+
+ 
+.nav 	{
+		padding: 0; margin: 120px 0 0 30px;
+		font-family: Arial, Helvetica, Sans-Serif;
+		overflow: visible;   /*当内容溢出元素框时发生的事情*/
+		}
+		
+.nav ul {		
+		display: block;
+		list-style: none;
+		margin: -18px 0; padding: 0;
+		border: 0; 
+		}
+		
+
+ 
+/* HACK >>> first margin for IE 6, after voice-family the hacks for gecko-based browsers and IE 5 (Win & Mac?) */
+.nav ul li 	{
+			position: relative; top: -1px; left: -11px;
+			margin: 10px 0 5px 0; padding: 0; 
+			border: 0;
+			voice-family: "\"}\""; /* Gecko Stuff follows */
+			margin: 10px 0 5px 10px; 
+			}
+
+ 
+.nav a, .nav a:visited {
+				width: 18.4em; height: 2em;
+				display: block; 
+				margin: 0 0 0 3px; padding: 1px;
+				font-weight: bold; 
+				font-size: 110%; 
+				line-height: 2em; 
+				text-indent: 0.4em;   /*规定文本块中首行文本的缩进*/
+				text-align: left; 
+				text-decoration: none;
+				cursor: pointer;
+				voice-family: "\"}\"";  /* CSS的语音属性 */
+				margin: 0 0 0 -10px;
+				}
+ 
+ 
+.nav ul ul {	
+			padding: 20px 0 18px 0;
+			background: none;
+			position: relative; top: -1px;
+			}
+ 
+
+				
+.nav ul li li	{
+			position: relative; top: 0px; left: 10px;
+			margin: 10px 0 5px 1px; padding: 0 0 0 25px;
+			voice-family: "\"}\"";
+			left: 0px;
+			}
+			
+
+ 
+.nav ul li .sub-sub {
+			left: 10px;
+			margin: 10px 0 0 1px;
+			voice-family: "\"}\"";
+			position: relative; top: 0px; left: 0px;
+			}
+ 
+
+ 
+.nav ul ul a, .nav ul ul a:visited 	{
+					width: 15.9em; height: 1.8em;
+					margin: 0;
+					font-size: 110%; line-height: 1.8em; font-weight: normal; text-indent: 0.3em; 
+					}
+					
+
+ 
+.nav ul ul ul {margin: 0 0 34px 12px; padding: 8px 0 0 0;}
+ 
+.nav ul li li li	{
+			position: relative; top: 13px; left: 0px;
+			margin: 10px 0 5px 0; padding: 0 0 0 20px; 
+			}
+ 
+
+																		
+.nav ul ul ul a, .nav ul ul ul a:visited 	{
+					width: 14.9em;
+					padding: 1px;
+					font-size: 100%;
+					}
+					
+
+ 
+/* ### Global Settings >>> colors, borders and images  ### */
+.nav 	{ border: 0; border-left: 1px solid #BBBBBB; }
+.nav ul li li	{color: #000; background:  url("../images/line.gif") left center no-repeat;}
+.nav ul ul ul {border-left: 1px solid #BBBBBB; }
+.nav ul li .sub-sub {background:  url("../images/line.gif") top left no-repeat;}
+.nav a, .nav a:visited	{color: #4F4F4F;}				
+.nav a:active, .nav a:hover, .nav a:focus,  a:focus .sffocus 	{color: #000;}			
+.nav ul ul a, .nav ul ul a:visited 	{color: #4F4F4F;}			
+.nav ul ul a:active, .nav ul ul a:hover, .nav ul ul a:focus	{color: #000;}
+	
+/* inner box styling */
+/* Level 1 */
+.nav ul li .ro {display: block; width: 100%; background: url("../images/ro-01.gif") top right no-repeat;}
+.nav ul li .lo {display: block; width: 100%; background: url("../images/lo-01.gif") top left no-repeat;}
+.nav ul li .ru {display: block; width: 100%; background: url("../images/ru-01.gif") bottom right no-repeat;}
+.nav ul li .lu {display: block; width: 100%; background: url("../images/lu-01.gif") bottom left no-repeat;}
+.nav ul li .box-content {width: 100%; padding: 0.1em 0.1em 0.1em 0.1em; }
+ 
+/* Level 2 + 3 */
+.nav ul li li .ro {background: url("../images/ro-02.gif") top right no-repeat;}
+.nav ul li li .lo {background: url("../images/lo-02.gif") top left no-repeat;}
+.nav ul li li .ru {background: url("../images/ru-02.gif") bottom right no-repeat;}
+.nav ul li li .lu {background: url("../images/lu-02.gif") bottom left no-repeat;}
+.nav ul li li .box-content {width: 100%; padding: 0.1em 0.1em 0.1em 0.1em; }
+/* Level 1 - 3 hover */
+.nav ul li a:hover .ro {background: url("../images/ro_h.gif") top right no-repeat;}
+.nav ul li a:hover .lo {background: url("../images/lo_h.gif") top left no-repeat;}
+.nav ul li a:hover .ru {background: url("../images/ru_h.gif") bottom right no-repeat;}
+.nav ul li a:hover .lu {background: url("../images/lu_h.gif") bottom left no-repeat;}
